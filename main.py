@@ -1,5 +1,5 @@
 __author__ = "Reha Kasuto"
-__version__ = "0.1.6"
+__version__ = "0.1.7"
 
 from types import SimpleNamespace
 
@@ -8,8 +8,8 @@ import json
 import common as c
 from datetime import datetime
 
-c.log_info(f"©Micro Signal alerter has started to working. {datetime.now()} - v{__version__}")
-c.log_info(f"Running ...")
+c.log_info(f"©Micro Signal Scalp islemler icin tasarlanmis uyarici calismaya basladi. {datetime.now()} - v{__version__}")
+c.log_info(f"Calisiyor ...")
 
 settings = json.load(open("settings.json", "r"), object_hook=lambda d: SimpleNamespace(**d))
 
@@ -39,7 +39,7 @@ while True:
                 continue
 
             if change_ratio > change_ratio_at_least:
-                c.log_info(f'{datetime.now()} - Change ratio for {symbol} on {interval} interval: {change_ratio}')
+                c.log_info(f'{datetime.now()} - {symbol} icin {interval} mumlarda degisim orani {change_ratio}')
     except Exception as e:
         c.log_error(f"{datetime.now()} || {e}")
         pass

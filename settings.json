@@ -2,5 +2,5 @@
     "interval" : "15m",
     "baseUrl": "https://fapi.binance.com/fapi/v1",
     "volumeUsdt" : 1000000,
-    "changeRatioAtLeast" : 6
+    "changeRatioAtLeast" : 1
 }
