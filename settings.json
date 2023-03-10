@@ -2,5 +2,9 @@
     "interval" : "15m",
     "baseUrl": "https://fapi.binance.com/fapi/v1",
     "volumeUsdt" : 1000000,
-    "changeRatioAtLeast" : 1
+    "changeRatioAtLeast" : 1,
+    "telegram": {
+        "isActive": true,
+        "token": "6114155250:AAFUDBomJ7eGuGyi93S4uAq0MPt3roVSHWw"
+    }
 }

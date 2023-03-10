@@ -1,13 +1,15 @@
 import logging
 
-logging.basicConfig(filename='micro-signal.log', level=logging.INFO)
 
-
-def log_info(message):
+def log_info(message, print_text=False):
+    logging.basicConfig(filename='micro-signal-info.log', level=logging.INFO)
     logging.info(message)
-    print(message)
+    if print_text:
+        print(message)
 
 
-def log_error(message):
+def log_error(message, print_text=False):
+    logging.basicConfig(filename='micro-signal-error.log', level=logging.ERROR)
     logging.error(message)
-    print(message)
+    if print_text:
+        print(message)

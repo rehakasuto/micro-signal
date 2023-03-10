@@ -1,5 +1,5 @@
 __author__ = "Reha Kasuto"
-__version__ = "0.1.7"
+__version__ = "0.2.3"
 
 from types import SimpleNamespace
 
@@ -7,12 +7,14 @@ import requests
 import json
 import common as c
 from datetime import datetime
+import telegram_functions as tf
 
-c.log_info(f"©Micro Signal Scalp islemler icin tasarlanmis uyarici calismaya basladi. {datetime.now()} - v{__version__}")
-c.log_info(f"Calisiyor ...")
+print(f"©Micro Signal OMEGA Scalp islemler icin tasarlanmis uyarici calismaya basladi. {datetime.now()} - v{__version__}")
+print(f"Calisiyor ...")
 
 settings = json.load(open("settings.json", "r"), object_hook=lambda d: SimpleNamespace(**d))
 
+t = settings.telegram
 interval = settings.interval
 base_url = settings.baseUrl
 volume_usdt = int(settings.volumeUsdt)
@@ -39,7 +41,10 @@ while True:
                 continue
 
             if change_ratio > change_ratio_at_least:
-                c.log_info(f'{datetime.now()} - {symbol} icin {interval} mumlarda degisim orani {change_ratio}')
+                main_message = f"{symbol} icin {interval} mumlarda degisim orani {change_ratio}"
+                c.log_info(f'{datetime.now()} - {main_message}', True)
+                if t.isActive:
+                    tf.send_message_to_telegram(t.token, f"🔴 <b>{symbol}</b> 🔴 \n {interval} mumlarda değişim oranı <b>{change_ratio}</b>")
     except Exception as e:
         c.log_error(f"{datetime.now()} || {e}")
         pass
