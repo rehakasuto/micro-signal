@@ -4,6 +4,7 @@ from google.oauth2 import service_account
 
 SERVICE_ACCOUNT_FILE = "configuration.json"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+DISCOVERY_SERVICE_URL = 'https://sheets.googleapis.com/$discovery/rest?version=v4'
 
 cred = None
 cred = service_account.Credentials.from_service_account_file(
@@ -11,7 +12,10 @@ cred = service_account.Credentials.from_service_account_file(
 
 SPREADSHEET_ID = "1C_4CiZppnmo0ysXbns16psHtn8Khe1M4WSPvhE1JTT0"
 
-service = build('sheets', 'v4', credentials=cred)
+try:
+    service = build('sheets', 'v4', credentials=cred)
+except:
+    service = build('sheets', 'v4', credentials=cred, discoveryServiceUrl=DISCOVERY_SERVICE_URL)
 
 
 def get_data_by_email(email):
@@ -23,8 +27,3 @@ def get_data_by_email(email):
             if value == email:
                 return row
     return None
-
-
-
-
-

@@ -1,8 +1,8 @@
 __author__ = "Reha Kasuto"
 __version__ = "0.3.2"
 
+import sys
 from types import SimpleNamespace
-
 import requests
 import json
 import common as c
@@ -34,8 +34,8 @@ if hasattr(settings, 'license'):
         license_email = app_license.email
 
 if app_license is None or app_license == "" or license_key is None or license_key == "" or license_email is None or license_email == "":
-    c.log_error("Lütfen lisans bilginizi giriniz.")
-    exit()
+    c.log_error(f"{datetime.now()} || Lütfen lisans bilginizi giriniz.")
+    sys.exit()
 
 while True:
     try:
@@ -48,8 +48,8 @@ while True:
             if license_data is None or license_data[1] != license_key or datetime.now() > datetime.strptime(
                     license_data[2],
                     '%m-%d-%Y'):
-                c.log_error("Lisans bilginiz hatalı veya geçersizdir")
-                exit()
+                c.log_error(f"{datetime.now()} || Lisans bilginiz hatalı veya geçersizdir")
+                sys.exit()
 
             symbol = ticker['symbol']
 
