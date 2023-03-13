@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bbot-370411",
+  "private_key_id": "51397519394f8ead00ff556ffbe28bdef7dd8834",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzECCAnqOPaoml\nSiWTvKEzYNHX3x0aYvFuilmEmI+BuOg/M7FBjyObHdeRkP34FdSeKRwZzqNo/y3O\ngVnw18wWQ5t9AHNLeKnmMoisqyCX0CTKcTYd+iEYvSx1uq0sAuZp50Bfo0UsKXhv\n7h4VC+Ti+1DFw9fftaWz+gwkX3nEnlBhQSgSXuhk1GgWyNsA4dnvX2H5a4oEVoxe\nbyVrHXl8UdZHU07lCKmJXkywLg6LM1NG/mq3YO99uuffuwzM+9Z1KBWrRW7ImhJq\n8Rz+iraaIrnvxwAIPcc5VNQbxON99f4I1RzxmWyFMStBUISh1W/CNut/B1+j1LaF\n9XdaLzRzAgMBAAECggEAUlEnn/lN17BydroPbEtbD/OChGrdRjQWKWsQnBRGZKxM\nmEF7S1gyVizx3Ml694GRrOPZN0P3e11UAYsVfdK2z8VkxaJfXmKqOFki274Pzbqy\nLx68cit665SLy9N1qLXsluLohQ7ZzeOCqnIdAi/lmTNPfpr5sq4e7w4UZuQ9ZlVa\nlHztMXdS1ld8CiGnc3vQFSBzliNiPxYd84HH9fCGBN1w4IMBcrdqv12mBr0bSpNd\nBJgRSMk2VCviKdcyx9/PmDk1sHCczbakSd34iOpS8DYP6PWu7KqD2OmIafhyRxYC\n0dWVoNZkRjSTHd1XEQS/BL+4crB2aC4lV9kS9Y7BAQKBgQD1LBAgelZORe6U1fiI\naC/n5JW+z5El9g6QiI0ucK+054hlYjWPP28QD4vJn0FwGj/aDLVHniKlMxynpqCt\nhs406FiOSk82h5mxr9MfvqMwAWk0oaYa4x2HQlrtByi6hZ+7ICOb7N0omYqySvrj\n3CTBmbHfuuCe08kEdvNIPYmfuQKBgQC6+KDnqJTehmgMVv5luONm9DcBdYUTr7j8\nbvfkSXtC+NGvc20g8NfAb9ONxOZZCi6MdyZIen8lvgYQugsJxHTxbBtokkJggqM7\nnIIqmXkqvRVskevxOZMgQi47v+dfw2F2GL/aA2jh7VetJcc+OFWXX5dsaJRBFEFr\nCkN8WFDTiwKBgGdsRQlOUiYGvhQvBv6T5NGPzdOGQBaha5dw4w2aH6TSnukVur5I\n5hMCW9ebxMEDcbgL8FTb0oWZwBbA5bsNyOLsuJ6dnjjEjwMzxn33r2NK1RSMtENX\nV1d9mFmw0W+Neso3To4yJ0E/NBDuLFP+w8qfiTd139dgQ8YMX6gzvWCRAoGAWJDV\nh2avvgjk2JOMxhqifW5JcAN/Gigu9ESMYDL+lGbQzM9cbjInwRw3lfwjMSJFknwO\nQl7kQ7iTnvDBscrBqmqPQSWnE5hOQjqM3ij84GXY9CjbHtUrACjZRaxNqWsfi5WF\nq3vZ/ssysO4oRyzgPmgljlCriXhS1KVz+j7LaqkCgYEA2qZrckE+I6CYBRbCO6HR\no8oIErBZXwfepYtNuC7rYSsnRhxY3+6HDdPhr5kaTU6HDQfcFEwenDJ5fTi4UlbJ\na3lmvEs685GfHJgHgVhbG7SbBDR/4xzMPTFiBZ7YWL+3Ar7o/LcG4Xqzw4pRqGIc\n78yeRdl8+N3QU3u9g0WVe6s=\n-----END PRIVATE KEY-----\n",
+  "client_email": "micro-signal@bbot-370411.iam.gserviceaccount.com",
+  "client_id": "112682702797606202738",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/micro-signal%40bbot-370411.iam.gserviceaccount.com"
+}

@@ -6,5 +6,9 @@
     "telegram": {
         "isActive": true,
         "token": "6114155250:AAFUDBomJ7eGuGyi93S4uAq0MPt3roVSHWw"
+    },
+    "license": {
+        "key": "9ce1ae50-9656-4589-baba-d5e425416f22",
+        "email": "yavuzkyigit@gmail.com"
     }
 }
